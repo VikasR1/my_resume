@@ -1,0 +1,25 @@
+  <!-- Header -->
+  <header id="site_header" class="header mobile-menu-hide header-color-dark">
+  <div class="my-photo tilt-effect">
+    <img src="{{ url_for('static', path='/images/photo.jpg') }}" alt="image">
+  </div>
+  
+  <div class="site-title-block">
+    <h1 class="site-title">Vikas Rajoria</h1>
+  </div>
+
+  {% include "components/navigation.html" %}
+</header>
+<!-- /Header -->
+
+<!-- Mobile Header -->
+<div class="mobile-header mobile-visible">
+  <div class="mobile-logo-container">
+    <div class="mobile-site-title">Vikas Rajoria</div>
+  </div>
+
+  <a class="menu-toggle mobile-visible">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<!-- /Mobile Header -->

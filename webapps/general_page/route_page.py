@@ -10,5 +10,5 @@ router = APIRouter(include_in_schema=False)
 @router.get("/")
 async def home(request: Request):
     return templates.TemplateResponse(
-        "general_pages/home.html",{"request":request}
+        "general_pages/index.html",{"request":request}
         )

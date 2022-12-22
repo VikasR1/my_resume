@@ -1,0 +1,60 @@
+{% extends "shared/base.html" %}
+
+
+{% block title %} 
+  <title>Vikas Rajoria</title>
+{% endblock %} 
+
+{% block content %}
+
+ <!-- Loading animation -->
+ <div class="preloader">
+  <div class="preloader-animation">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+  </div>
+</div>
+<!-- /Loading animation -->
+
+
+<div id="page" class="page template-style-dark">
+    <!-- Header -->
+    {% include "components/header.html" %}
+    <!-- /Header -->
+
+    <!-- Main Content -->
+    <div id="main" class="site-main">
+        <!-- Page changer wrapper -->
+        <div class="pt-wrapper" style="background-image: url(static/images/main_bg_light.jpg);">
+            <!-- Subpages -->
+                <div class="subpages">
+
+                    <!-- Home Subpage -->
+                    {% include "general_pages/home.html" %}
+                    <!-- End of Home Subpage -->
+
+                    <!-- About Me Subpage -->
+                    {% include "general_pages/about.html" %}
+                    <!-- End of About Me Subpage -->
+
+                    <!-- Resume Subpage -->
+                    {% include "general_pages/resume.html" %}
+                    <!-- End Resume Subpage -->
+
+
+                    <!-- Portfolio Subpage -->
+                    {% include "general_pages/portfolio.html" %}
+                    <!-- /Portfolio Subpage -->
+
+                    <!-- Contact Subpage -->
+                    {% include "general_pages/contact.html" %}
+                    <!-- End Contact Subpage -->
+
+                </div>
+        </div>
+        <!-- /Page changer wrapper -->
+    </div>
+    <!-- /Main Content -->
+</div>
+
+{% endblock %} 
